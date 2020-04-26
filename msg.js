@@ -10,9 +10,8 @@ post_option.method = 'POST';
 var post_data = JSON.stringify({
   "msgtype": "text",
   "text": {
-    // "content": "早上好！又是元气满满的一天！！！冲鸭！！！",
-    "content": '吃饭时间到',
-    "mentioned_mobile_list": ["13570455985"]
+    "content": "早安小俊杰！又是元气满满的一天！！！冲鸭！！！",
+    "mentioned_mobile_list": ["17320571909"]
   }
 })
 
