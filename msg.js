@@ -2,13 +2,13 @@ var util = require('util'),
   https = require('https'),
   url = require('url')
 
-var JJregUrl =
+var MSregUrl =
     'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2d638b16-b15c-4576-9731-7201f11613d0',
-  JJpostData = JSON.stringify({
+  MSpostData = JSON.stringify({
     msgtype: 'text',
     text: {
-      content: '早安小俊杰！又是元气满满的一天！！！么么哒！！！',
-      mentioned_mobile_list: ['17320571909'],
+      content: '早上好！空谈误国，实干兴邦。撸起袖子就是干！',
+      mentioned_mobile_list: ['13570455985'],
     },
   })
 var GFregUrl =
@@ -23,7 +23,7 @@ var GFregUrl =
       isAtAll: false,
     },
   })
-timingTask(JJregUrl, JJpostData)
+timingTask(MSregUrl, MSpostData)
 timingTask(GFregUrl, GFpostData)
 
 function timingTask(regUrl, postData) {
